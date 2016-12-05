@@ -40,8 +40,8 @@
 	boots["winterboots"] = /obj/item/clothing/shoes/winterboots
 	gear_tweaks += new/datum/gear_tweak/path(boots)
 
-//EROS START
-	
+// PRISONSTATION START
+
 /datum/gear/shoes/flats
 	display_name = "flats selection"
 	path = /obj/item/clothing/shoes/flats
@@ -63,4 +63,4 @@
 	display_name = "flip flops"
 	path = /obj/item/clothing/shoes/flipflop
 
-//EROS END
+// PRISONSTATION END

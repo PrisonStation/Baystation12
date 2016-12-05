@@ -1,5 +1,5 @@
 /obj/item/weapon/storage/belt/eros/
-	icon = 'icons/eros/obj/adult.dmi'
+	icon = 'icons/prisonstation/obj/adult.dmi'
 	storage_slots = 1
 	max_w_class = 3
 	can_hold = list(

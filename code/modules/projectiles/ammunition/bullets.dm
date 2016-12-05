@@ -175,7 +175,7 @@
 	color = "#FF0000"
 	projectile_type = /obj/item/projectile/bullet/pistol/cap
 
-// ---------- EROS BEGIN - CARTRIDGES, BALLISTIC
+// ---------- PRISONSTATION BEGIN - CARTRIDGES, BALLISTIC
 
 /obj/item/ammo_casing/a762/ap
 	desc = "A 7.62mm armor-piercing bullet casing."

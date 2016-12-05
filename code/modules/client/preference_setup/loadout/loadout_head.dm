@@ -161,7 +161,7 @@
 	gear_tweaks += new/datum/gear_tweak/path(assoc_by_proc(welding_masks, /proc/get_initial_name))
 
 
-// EROS BEGIN
+// PRISONSTATION BEGIN
 
 /datum/gear/head/cap/black
 	display_name = "cap,black"
@@ -249,4 +249,4 @@
 /datum/gear/head/sombrero
 	display_name = "sombrero"
 	path = /obj/item/clothing/head/sombrero
-//EROS END
+// PRISONSTATION END

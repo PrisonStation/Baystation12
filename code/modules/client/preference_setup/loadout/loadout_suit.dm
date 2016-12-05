@@ -151,7 +151,7 @@
 	path = /obj/item/clothing/suit/storage/hooded/wintercoat/miner
 	allowed_roles = list("Shaft Miner")
 
-//EROS START
+// PRISONSTATION START
 
 /datum/gear/suit/flannel
 	display_name = "grey flannel"
@@ -220,4 +220,4 @@
 /datum/gear/suit/storage/miljacket/green
 	display_name = "military jacket, green"
 	path = /obj/item/clothing/suit/storage/miljacket/green
-//EROS FINISH
+// PRISONSTATION FINISH

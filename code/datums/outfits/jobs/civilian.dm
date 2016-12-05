@@ -98,7 +98,7 @@
 	id_type = /obj/item/weapon/card/id/civilian/chaplain
 	pda_type = /obj/item/device/pda/chaplain
 
-//EROS START
+//PRISONSTATION START
 
 /decl/hierarchy/outfit/job/entertainer
 	name = OUTFIT_JOB_NAME("Entertainer")
@@ -170,4 +170,4 @@
 	backpack_contents = list(/obj/item/device/violin/secondary = 1, /obj/item/device/violin/backup = 1, /obj/item/device/violin/emergency = 1)
 
 
-//EROS FINISH
+//PRISONSTATION FINISH

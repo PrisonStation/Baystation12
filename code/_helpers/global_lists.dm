@@ -33,7 +33,7 @@ var/global/list/language_keys[0]					// Table of say codes for all languages
 var/global/list/whitelisted_species = list("Human") // Species that require a whitelist check.
 var/global/list/playable_species = list("Human")    // A list of ALL playable species, whitelisted, latejoin or otherwise.
 
-//EROS START
+//PRISONSTATION START
 //Body Parts
 var/global/list/body_breast_list = list()
 var/global/list/body_dicks_list = list()
@@ -41,7 +41,7 @@ var/global/list/body_vaginas_list = list()
 var/global/list/body_ears_list  = list()
 var/global/list/body_wings_list = list()
 var/global/list/body_tails_list = list()
-//EROS FINISH
+//PRISONSTATION FINISH
 
 var/list/mannequins_
 
@@ -173,7 +173,7 @@ var/global/list/string_slot_flags = list(
 		var/datum/job/J = new T
 		joblist[J.title] = J
 
-//EROS START
+//PRISONSTATION START
 
 	//Breasts Initialization
 	paths = typesof(/datum/sprite_accessory/breasts) - /datum/sprite_accessory/breasts
@@ -217,7 +217,7 @@ var/global/list/string_slot_flags = list(
 		body_tails_list[H.name] = H
 		body_tails_list += H.name
 
-//EROS FINISH
+//PRISONSTATION FINISH
 
 	//Languages and species.
 	paths = typesof(/datum/language)-/datum/language

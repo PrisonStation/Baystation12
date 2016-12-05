@@ -216,7 +216,7 @@
 	max_ammo = 7
 	multiple_sprites = 1
 
-//---------- EROS BEGIN - MAGAZINES, BALLISTIC
+//---------- PRISONSTATION BEGIN - MAGAZINES, BALLISTIC
 
 /obj/item/ammo_magazine/clip/a762
 	name = "ammo clip (7.62mm)"

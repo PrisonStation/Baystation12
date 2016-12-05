@@ -170,7 +170,7 @@ var/global/list/datum/dna/gene/dna_genes[0]
 	SetUIValueRange(DNA_UI_HAIR_STYLE,  hair,  hair_styles_list.len,       1)
 	SetUIValueRange(DNA_UI_BEARD_STYLE, beard, facial_hair_styles_list.len,1)
 
-//EROS START
+//PRISONSTATION START
 
 	//Gender stuff
 	if (!character.c_type)
@@ -217,7 +217,7 @@ var/global/list/datum/dna/gene/dna_genes[0]
 	SetUIValueRange(DNA_UI_EARS, ears, body_ears_list.len,1)
 	SetUIValueRange(DNA_UI_WINGS, wings, body_wings_list.len,1)
 	SetUIValueRange(DNA_UI_TAIL, tail, body_tails_list.len,1)
-//EROS FINISH
+//PRISONSTATION FINISH
 
 	UpdateUI()
 

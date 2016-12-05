@@ -282,7 +282,7 @@
 		return
 	..()
 
-//---------- EROS BEGIN - FIREARMS, AUTOMATIC
+//---------- PRISONSTATION BEGIN - FIREARMS, AUTOMATIC
 
 /obj/item/weapon/gun/projectile/automatic/ppsh41
 	name = "PPSh-41"

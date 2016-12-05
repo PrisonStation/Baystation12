@@ -82,7 +82,7 @@
 	held_count = 5
 	held_type = /mob/living/simple_animal/chick
 
-//---------- EROS BEGIN - SPECIAL LARGE CRATES
+//---------- PRISONSTATION BEGIN - SPECIAL LARGE CRATES
 
 /obj/structure/largecrate/anomaly
 	name = "anomaly crate"

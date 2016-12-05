@@ -138,7 +138,7 @@
 	if(.)
 		H.implant_loyalty(H)
 
-//EROS START
+//PRISONSTATION START
 /datum/job/entertainer
 	title = "Entertainer"
 	department = "Civilian"
@@ -157,4 +157,4 @@
 		"Artist" = /decl/hierarchy/outfit/job/entertainer/artist,
 		"Violinist" = /decl/hierarchy/outfit/job/entertainer/violinist)
 	outfit_type = /decl/hierarchy/outfit/job/entertainer
-//EROS FINISH
+//PRISONSTATION FINISH

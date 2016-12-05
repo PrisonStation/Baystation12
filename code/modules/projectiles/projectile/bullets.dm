@@ -254,7 +254,7 @@
 	loc = null
 	qdel(src)
 
-//---------- EROS BEGIN - PROJECTILES, BALLISTIC
+//---------- PRISONSTATION BEGIN - PROJECTILES, BALLISTIC
 
 //7.62x54mmR
 /obj/item/projectile/bullet/rifle/a762mmr

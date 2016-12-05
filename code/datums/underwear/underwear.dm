@@ -50,8 +50,8 @@ datum/category_group/underwear/dd_SortValue()
 	var/icon_state                   // And the particular item state.
 	var/list/tweaks = list()         // Underwear customizations.
 	var/has_color = FALSE
-	var/show_genitals = 1 //eros
-	var/show_boobs = 1  //eros
+	var/show_genitals = 1 //prisonstation
+	var/show_boobs = 1  //prisonstation
 
 /datum/category_item/underwear/New()
 	if(has_color)

@@ -159,7 +159,7 @@
 	path = /obj/item/clothing/under/rank/psych/turtleneck/sweater
 	flags = GEAR_HAS_COLOR_SELECTION
 
-//EROS START
+// PRISONSTATION START
 
 /datum/gear/uniform/eros/harness
 	display_name = "gear harness"
@@ -390,4 +390,4 @@
 	path = /obj/item/clothing/under/worn_hazard
 	allowed_roles = list("Chief Engineer","Station Engineer")
 
-//EROS FINISH
+// PRISONSTATION FINISH

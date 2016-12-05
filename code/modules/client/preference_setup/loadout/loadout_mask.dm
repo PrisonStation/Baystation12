@@ -10,7 +10,7 @@
 	path = /obj/item/clothing/mask/surgical
 	cost = 2
 
-//EROS START
+// PRISONSTATION START
 
 /datum/gear/mask/bandana
 	display_name = "bandana selection"
@@ -25,4 +25,4 @@
 		bandanas[initial(bandana_type.name)] = bandana_type
 	gear_tweaks += new/datum/gear_tweak/path(sortAssoc(bandanas))
 
-//EROS FINISH
+// PRISONSTATION FINISH

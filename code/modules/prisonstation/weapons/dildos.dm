@@ -1,5 +1,5 @@
 /obj/item/weapon/eros/sex
-	icon = 'icons/eros/obj/adult.dmi'
+	icon = 'icons/prisonstation/obj/adult.dmi'
 	w_class = 1
 	attack_verb = list("pleasured", "violated", "teased", "poked")
 

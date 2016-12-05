@@ -51,7 +51,7 @@ datum/preferences
 	var/list/language_prefixes = list() //Kanguage prefix keys
 	var/list/gear						//Custom/fluff item loadout.
 
-//EROS START
+//PRISONSTATION START
 	var/c_type = "None"					//Breast Type
 	var/d_type = "None"					//Dick Type
 	var/v_type = "None"					//Vagina Type
@@ -73,7 +73,7 @@ datum/preferences
 	var/r_tail = 200					//Tail color
 	var/g_tail = 200					//Tail color
 	var/b_tail = 200					//Tail color
-//EROS FINISH
+//PRISONSTATION FINISH
 
 		//Some faction information.
 	var/home_system = "Unset"           //System of birth.
@@ -320,7 +320,7 @@ datum/preferences
 	character.h_style = h_style
 	character.f_style = f_style
 
-//EROS START
+// PRISONSTATION START
 	character.c_type = c_type
 	character.d_type = d_type
 	character.v_type = v_type
@@ -344,7 +344,7 @@ datum/preferences
 	character.wings_type = wings_type
 	character.ears_type = ears_type
 	character.tail_type = tail_type
-//EROS FINISH
+// PRISONSTATION FINISH
 
 	// Replace any missing limbs.
 	for(var/name in BP_ALL_LIMBS)

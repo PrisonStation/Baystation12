@@ -2,7 +2,7 @@
     name = "snow"
 
     dynamic_lighting = 0
-    icon = 'icons/eros/turf/snow.dmi'
+    icon = 'icons/prisonstation/turf/snow.dmi'
     icon_state = "snow"
 
     oxygen = MOLES_O2STANDARD * 1.15

@@ -72,21 +72,21 @@
 	. += "Dick Type: <a href='?src=\ref[src];dick_type=1'>[pref.d_type]</a><br>"
 	. += "Vagina Type: <a href='?src=\ref[src];vagina_type=1'>[pref.v_type]</a><br>"
 	. += "<b>Genitals Color</b><br>"
-	. += "<a href='?src=\ref[src];genital_color=1'>Change Color</a> <font face='fixedsys' size='3' color='#[num2hex(pref.r_genital, 2)][num2hex(pref.g_genital, 2)][num2hex(pref.b_genital, 2)]'><table style='display:inline;' bgcolor='#[num2hex(pref.r_genital, 2)][num2hex(pref.g_genital, 2)][num2hex(pref.b_genital)]'><tr><td>__</td></tr></table></font><br>"
+	. += "<a href='?src=\ref[src];genital_color=1'>Genitals Color</a> <font face='fixedsys' size='3' color='#[num2hex(pref.r_genital, 2)][num2hex(pref.g_genital, 2)][num2hex(pref.b_genital, 2)]'><table style='display:inline;' bgcolor='#[num2hex(pref.r_genital, 2)][num2hex(pref.g_genital, 2)][num2hex(pref.b_genital)]'><tr><td>__</td></tr></table></font><br>"
 	. += "<br>"
 	. += "<table><tr style='vertical-align:top'><td><b>Body Modifications</b> "
 	. += "<br>"
 	. += "Ears Type: <a href='?src=\ref[src];cears_type=1'>[pref.ears_type]</a><br>"
-	. += "<a href='?src=\ref[src];ears_color=1'>Change Color</a> <font face='fixedsys' size='3' color='#[num2hex(pref.r_ears, 2)][num2hex(pref.g_ears, 2)][num2hex(pref.b_ears, 2)]'><table style='display:inline;' bgcolor='#[num2hex(pref.r_ears, 2)][num2hex(pref.g_ears, 2)][num2hex(pref.b_ears)]'><tr><td>__</td></tr></table></font><br>"
+	. += "<a href='?src=\ref[src];ears_color=1'>Ears Color</a> <font face='fixedsys' size='3' color='#[num2hex(pref.r_ears, 2)][num2hex(pref.g_ears, 2)][num2hex(pref.b_ears, 2)]'><table style='display:inline;' bgcolor='#[num2hex(pref.r_ears, 2)][num2hex(pref.g_ears, 2)][num2hex(pref.b_ears)]'><tr><td>__</td></tr></table></font><br>"
 	var/datum/species/S = all_species[pref.species]
 	var/taur_override = S.taur_override
 	if(taur_override)
 		. += "Tail Type: <font color='grey'>[taur_override]</font><br>"
 	else
 		. += "Tail Type: <a href='?src=\ref[src];ctail_type=1'>[pref.tail_type]</a><br>"
-	. += "<a href='?src=\ref[src];tail_color=1'>Change Color</a> <font face='fixedsys' size='3' color='#[num2hex(pref.r_tail, 2)][num2hex(pref.g_tail, 2)][num2hex(pref.b_tail, 2)]'><table style='display:inline;' bgcolor='#[num2hex(pref.r_tail, 2)][num2hex(pref.g_tail, 2)][num2hex(pref.b_tail)]'><tr><td>__</td></tr></table></font><br>"
+	. += "<a href='?src=\ref[src];tail_color=1'>Tails Color</a> <font face='fixedsys' size='3' color='#[num2hex(pref.r_tail, 2)][num2hex(pref.g_tail, 2)][num2hex(pref.b_tail, 2)]'><table style='display:inline;' bgcolor='#[num2hex(pref.r_tail, 2)][num2hex(pref.g_tail, 2)][num2hex(pref.b_tail)]'><tr><td>__</td></tr></table></font><br>"
 	. += "Wings Type: <a href='?src=\ref[src];cwings_type=1'>[pref.wings_type]</a><br>"
-	. += "<a href='?src=\ref[src];wings_color=1'>Change Color</a> <font face='fixedsys' size='3' color='#[num2hex(pref.r_wings, 2)][num2hex(pref.g_wings, 2)][num2hex(pref.b_wings, 2)]'><table style='display:inline;' bgcolor='#[num2hex(pref.r_wings, 2)][num2hex(pref.g_wings, 2)][num2hex(pref.b_wings)]'><tr><td>__</td></tr></table></font><br>"
+	. += "<a href='?src=\ref[src];wings_color=1'>Wings Color</a> <font face='fixedsys' size='3' color='#[num2hex(pref.r_wings, 2)][num2hex(pref.g_wings, 2)][num2hex(pref.b_wings, 2)]'><table style='display:inline;' bgcolor='#[num2hex(pref.r_wings, 2)][num2hex(pref.g_wings, 2)][num2hex(pref.b_wings)]'><tr><td>__</td></tr></table></font><br>"
 
 
 /datum/category_item/player_setup_item/general/eros/OnTopic(var/href,var/list/href_list, var/mob/user)

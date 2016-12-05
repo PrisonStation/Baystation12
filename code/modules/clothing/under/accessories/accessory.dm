@@ -560,7 +560,7 @@
 	desc = "A pair of synthetic kneepads. Doesn't provide protection from more than arthritis."
 	icon_state = "kneepads"
 
-// ---------- EROS BEGIN - ACCESSORIES
+// ---------- PRISONSTATION BEGIN - ACCESSORIES
 /obj/item/clothing/accessory/locket
 	name = "locket"
 	desc = "A simple silver locket."

@@ -174,7 +174,7 @@
 		if((0 < beard) && (beard <= facial_hair_styles_list.len))
 			H.f_style = facial_hair_styles_list[beard]
 
-//EROS START
+//PRISONSTATION START
 		H.r_genital   = dna.GetUIValueRange(DNA_UI_GENITAL_R,    255)
 		H.g_genital   = dna.GetUIValueRange(DNA_UI_GENITAL_G,    255)
 		H.b_genital   = dna.GetUIValueRange(DNA_UI_GENITAL_B,    255)
@@ -225,7 +225,7 @@
 		H.update_ears()
 		H.update_genitals_showing()
 		H.update_tail_showing()
-//EROS FINISH
+//PRISONSTATION FINISH
 
 		H.force_update_limbs()
 		H.update_body()

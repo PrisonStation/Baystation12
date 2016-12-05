@@ -77,7 +77,7 @@
 */
 
 /datum/sprite_accessory/dicks
-	icon = 'icons/eros/mob/extras/dicks.dmi'
+	icon = 'icons/prisonstation/mob/extras/dicks.dmi'
 	species_allowed = list("Human","Unathi","Tajara","Skrell","Akula","Lamia", "Drider", "Machine")
 
 	dik_none
@@ -212,7 +212,7 @@
 */
 
 /datum/sprite_accessory/vaginas
-	icon = 'icons/eros/mob/extras/vaginas.dmi'
+	icon = 'icons/prisonstation/mob/extras/vaginas.dmi'
 	species_allowed = list("Human","Unathi","Tajara","Skrell","Akula","Lamia", "Drider", "Machine")
 
 	vag_none
@@ -270,7 +270,7 @@
 */
 
 /datum/sprite_accessory/breasts
-	icon = 'icons/eros/mob/extras/breasts.dmi'
+	icon = 'icons/prisonstation/mob/extras/breasts.dmi'
 	species_allowed = list("Human","Unathi","Tajara","Skrell","Akula","Lamia", "Drider", "Machine")
 
 	brt_none
@@ -389,7 +389,7 @@
 */
 
 /datum/sprite_accessory/ears
-	icon = 'icons/eros/mob/extras/ears.dmi'
+	icon = 'icons/prisonstation/mob/extras/ears.dmi'
 	species_allowed = list("Human","Unathi","Tajara","Skrell","Akula","Lamia", "Drider", "Machine")
 
 	ear_none
@@ -517,7 +517,7 @@
 */
 
 /datum/sprite_accessory/wings
-	icon = 'icons/eros/mob/extras/wings.dmi'
+	icon = 'icons/prisonstation/mob/extras/wings.dmi'
 	species_allowed = list("Human","Unathi","Tajara","Skrell","Akula","Lamia", "Drider", "Machine")
 
 	wng_none
@@ -581,7 +581,7 @@
 */
 
 /datum/sprite_accessory/tails
-	icon = 'icons/eros/mob/extras/tails.dmi'
+	icon = 'icons/prisonstation/mob/extras/tails.dmi'
 	species_allowed = list("Human","Unathi","Tajara","Skrell","Akula","Lamia", "Drider", "Machine")
 
 	tal_none

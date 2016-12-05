@@ -246,7 +246,7 @@ datum/preferences
 	mannequin.delete_inventory(TRUE)
 	dress_preview_mob(mannequin)
 
-	preview_icon = icon('icons/eros/effects/charpreview.dmi', "greyblack")
+	preview_icon = icon('icons/prisonstation/effects/charpreview.dmi', "greyblack")
 	preview_icon.Scale(48+32, 16+32)
 
 	// Taur rendering (shift stuff around, just for making them fit correctly)

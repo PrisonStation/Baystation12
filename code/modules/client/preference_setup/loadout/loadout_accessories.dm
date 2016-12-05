@@ -130,7 +130,7 @@
 	display_name = "locket"
 	path = /obj/item/clothing/accessory/locket
 
-// EROS START
+// PRISONSTATION START
 
 /datum/gear/accessory/collar
 	display_name = "collar selection"
