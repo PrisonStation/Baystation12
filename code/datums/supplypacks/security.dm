@@ -415,10 +415,18 @@
 	containername = "\improper Tactical Suit Locker"
 	access = access_armory
 
+/decl/hierarchy/supply_pack/security/practicelasers
+	name = "Practice Laser Carbines"
+	contains = list(/obj/item/weapon/gun/energy/laser/practice = 4)
+	cost = 20
+	containertype = /obj/structure/closet/crate/secure
+	containername = "\improper Practice laser carbine crate"
+	access = access_brig
+/*	
 /decl/hierarchy/supply_pack/security/bolt_rifles_mosin
 	name = "Surplus militia rifle crate"
-	contains = list(/obj/item/weapon/gun/projectile/shotgun/pump/rifle/mosin = 3,
-					/obj/item/ammo_magazine/clip/a762mmr = 6)
+	contains = list(/obj/item/weapon/gun/projectile/shotgun/pump/rifle/mosin = 1,
+					/obj/item/ammo_magazine/clip/a762mmr = 2)
 	cost = 40
 	hidden = 1
 	containertype = /obj/structure/closet/crate/secure/weapon
@@ -426,14 +434,15 @@
 
 /decl/hierarchy/supply_pack/security/slavshit
 	name = "Surplus militia squad crate"
-	contains = list(/obj/item/weapon/gun/projectile/shotgun/pump/rifle/mosin = 4,
+	contains = list(/obj/item/weapon/gun/projectile/shotgun/pump/rifle/mosin = 1,
 					/obj/item/weapon/gun/projectile/svt40,
 					/obj/item/weapon/gun/projectile/automatic/ppsh41,
-					/obj/item/ammo_magazine/clip/a762mmr = 8,
+					/obj/item/ammo_magazine/clip/a762mmr = 2,
 					/obj/item/ammo_magazine/a762svt = 2,
 					/obj/item/ammo_magazine/c762ppsh41 = 2,
-					/obj/item/clothing/under/soviet = 6)
+					/obj/item/clothing/under/soviet = 3)
 	cost = 100
 	hidden = 1
 	containertype = /obj/structure/closet/crate/secure/weapon
 	containername = "\improper Weapons crate"
+*/
