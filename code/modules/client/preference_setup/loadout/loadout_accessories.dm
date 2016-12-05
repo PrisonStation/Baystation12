@@ -121,6 +121,15 @@
 	shirts["random colored hawaii shirt"] = /obj/item/clothing/accessory/toggleable/hawaii/random
 	gear_tweaks += new/datum/gear_tweak/path(shirts)
 
+/datum/gear/accessory/scarf
+	display_name = "scarf selection"
+	path = /obj/item/clothing/accessory/scarf
+	flags = GEAR_HAS_COLOR_SELECTION
+
+/datum/gear/accessory/locket
+	display_name = "locket"
+	path = /obj/item/clothing/accessory/locket
+
 // EROS START
 
 /datum/gear/accessory/collar
@@ -132,9 +141,6 @@
 	..()
 	gear_tweaks += new/datum/gear_tweak/path(/obj/item/clothing/accessory/collar)
 
-/datum/gear/accessory/scarf
-	display_name = "scarf selection"
-	path = /obj/item/clothing/accessory/scarf
 
 /datum/gear/accessory/scarf/New()
 	..()

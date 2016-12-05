@@ -38,8 +38,8 @@
 	passive_temp_gain = 1  // This should cause IPCs to stabilize at ~80 C in a 20 C environment.
 
 	flags = NO_SCAN | NO_PAIN | NO_POISON
-	spawn_flags = CAN_JOIN
-	appearance_flags = HAS_UNDERWEAR | HAS_BIOMODS | HAS_HAIR_COLOR | HAS_SKIN_COLOR //IPCs can wear undies too :(
+	spawn_flags = SPECIES_CAN_JOIN | SPECIES_IS_WHITELISTED
+	appearance_flags = HAS_UNDERWEAR //IPCs can wear undies too :(
 
 	blood_color = "#1F181F"
 	flesh_color = "#575757"
@@ -71,7 +71,7 @@
 	heat_discomfort_strings = list(
 		"Your CPU temperature probes warn you that you are approaching critical heat levels!"
 		)
-	genders = list(MALE, FEMALE, NEUTER, PLURAL)
+	genders = list(NEUTER)
 
 /datum/species/machine/handle_death(var/mob/living/carbon/human/H)
 	..()

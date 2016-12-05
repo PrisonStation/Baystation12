@@ -34,8 +34,8 @@
 	var/bodytype = "Default"
 	if(ishuman(user_mob))
 		var/mob/living/carbon/human/user_human = user_mob
-		if(user_human.species.get_bodytype() in sprite_sheets)
-			bodytype = user_human.species.get_bodytype()
+		if(user_human.species.get_bodytype(user_human) in sprite_sheets)
+			bodytype = user_human.species.get_bodytype(user_human)
 
 		var/tmp_icon_state = overlay_state? overlay_state : icon_state
 		var/use_sprite_sheet = accessory_icons[slot]
@@ -137,7 +137,7 @@
 /obj/item/clothing/accessory/stethoscope/attack(mob/living/carbon/human/M, mob/living/user)
 	if(ishuman(M) && isliving(user))
 		if(user.a_intent == I_HELP)
-			var/body_part = parse_zone(user.zone_sel.selecting, M)
+			var/body_part = parse_zone(user.zone_sel.selecting)
 			if(body_part)
 				var/their = "their"
 				switch(M.gender)
