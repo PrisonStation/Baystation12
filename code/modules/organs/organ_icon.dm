@@ -74,7 +74,7 @@ var/list/limb_icon_cache = list()
 		icon = 'icons/mob/human_races/r_skeleton.dmi'
 	else
 		icon = species.get_icobase(owner)
-	
+
 	mob_icon = apply_colouration(new/icon(icon, icon_state))
 
 	if(body_hair && islist(h_col) && h_col.len >= 3)
@@ -203,7 +203,7 @@ var/list/robot_hud_colours = list("#FFFFFF","#CCCCCC","#AAAAAA","#888888","#6666
 		icon_cache_key += "_tone_[s_tone]"
 	else
 		if(s_col && s_col.len >= 3)
-			applying.Blend(rgb(s_col[1], s_col[2], s_col[3]), ICON_ADD)
+			applying.Blend(rgb(s_col[1], s_col[2], s_col[3]), ICON_MULTIPLY)
 			icon_cache_key += "_color_[s_col[1]]_[s_col[2]]_[s_col[3]]"
 
 	return applying
