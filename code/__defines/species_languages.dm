@@ -37,6 +37,7 @@
 #define LANGUAGE_TRADEBAND "Tradeband"
 #define LANGUAGE_GUTTER "Gutter"
 #define LANGUAGE_CULT "Cult"
+#define LANGUAGE_SIGN "Sign Language"
 #define LANGUAGE_LAMIA "Sehlin"
 #define LANGUAGE_DRIDER "Drathi"
 

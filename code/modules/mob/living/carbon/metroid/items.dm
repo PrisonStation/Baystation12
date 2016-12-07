@@ -280,7 +280,3 @@
 			var/area/A = get_area(src)
 			if(A)
 				to_chat(G, "Golem rune created in [A.name].")
-
-/mob/living/carbon/slime/has_eyes()
-	return 0
-
