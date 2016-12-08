@@ -138,9 +138,9 @@
 			overlays += test
 
 	else if(isflamesource(W))
-		log_and_message_admins("triggered a fueltank explosion with \a [W].")
+		log_and_message_admins("got himself on fire while trying to trigger a fueltank explosion with \a [W].")
 		user.visible_message("<span class='danger'>\The [user] puts \the [W] to \the [src]!</span>", "<span class='danger'>You put your [W] to \the [src] and with a moment of lucidity you realize, this might not have been the smartest thing you've ever done.</span>")
-		src.explode()
+		src.set_idiot_on_fire(user)
 		return
 
 	return ..()
@@ -167,6 +167,20 @@
 		explosion(src.loc,-1,1,2)
 	if(src)
 		qdel(src)
+
+/obj/structure/reagent_dispensers/fueltank/proc/set_idiot_on_fire(mob/living/user as mob)
+	if (reagents.total_volume > 500)
+		user.fire_stacks += 42
+		user.IgniteMob()
+	else if (reagents.total_volume > 100)
+		user.fire_stacks += 20
+		user.IgniteMob()
+	else if (reagents.total_volume > 50)
+		user.fire_stacks += 10
+		user.IgniteMob()
+	if(src)
+		qdel(src)
+
 
 /obj/structure/reagent_dispensers/fueltank/fire_act(datum/gas_mixture/air, temperature, volume)
 	if (modded)

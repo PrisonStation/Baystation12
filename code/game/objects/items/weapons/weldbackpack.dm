@@ -13,14 +13,15 @@
 	R.my_atom = src
 	R.add_reagent("fuel", max_fuel)
 
-/obj/item/weapon/weldpack/attackby(obj/item/W as obj, mob/user as mob)
+/obj/item/weapon/weldpack/attackby(obj/item/W as obj, mob/living/user as mob)
 	if(istype(W, /obj/item/weapon/weldingtool))
 		var/obj/item/weapon/weldingtool/T = W
 		if(T.welding & prob(50))
-			message_admins("[key_name_admin(user)] triggered a fueltank explosion.")
-			log_game("[key_name(user)] triggered a fueltank explosion.")
+			message_admins("[key_name_admin(user)] got himself on fire while trying to trigger a fueltank explosion.")
+			log_game("[key_name(user)] tried to trigger a fueltank explosion.")
 			to_chat(user, "<span class='danger'>That was stupid of you.</span>")
-			explosion(get_turf(src),-1,0,2)
+			user.fire_stacks += 15
+			user.IgniteMob()
 			if(src)
 				qdel(src)
 			return
