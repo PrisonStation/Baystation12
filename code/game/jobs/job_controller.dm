@@ -45,7 +45,10 @@ var/global/datum/controller/occupations/job_master
 				civilian_positions |= job.title
 			if(job.department_flag & MSC)
 				nonhuman_positions |= job.title
-
+			if(job.department_flag & SRV)
+				service_positions |= job.title
+			if(job.department_flag & SUP)
+				supply_positions |= job.title
 
 		return 1
 
@@ -505,7 +508,7 @@ var/global/datum/controller/occupations/job_master
 		//Gives glasses to the vision impaired
 		if(H.disabilities & NEARSIGHTED)
 			var/equipped = H.equip_to_slot_or_del(new /obj/item/clothing/glasses/regular(H), slot_glasses)
-			if(equipped != 1)
+			if(equipped)
 				var/obj/item/clothing/glasses/G = H.glasses
 				G.prescription = 7
 
