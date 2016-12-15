@@ -6,6 +6,7 @@ var/const/CIV               =(1<<4)
 var/const/COM               =(1<<5)
 var/const/CRG               =(1<<6)
 var/const/MSC               =(1<<7)
+var/const/PRI               =(1<<8)
 
 var/list/assistant_occupations = list(
 )
@@ -37,6 +38,8 @@ var/list/nonhuman_positions = list(
 	"pAI"
 )
 
+var/list/prisoners_positions = list(
+)
 
 /proc/guest_jobbans(var/job)
 	return ((job in command_positions) || (job in nonhuman_positions) || (job in security_positions))

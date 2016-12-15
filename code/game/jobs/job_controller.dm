@@ -599,11 +599,11 @@ var/global/datum/controller/occupations/job_master
 		if(!(C.prefs.spawnpoint in using_map.allowed_spawns))
 			if(H)
 				to_chat(H, "<span class='warning'>Your chosen spawnpoint ([C.prefs.spawnpoint]) is unavailable for the current map. Spawning you at one of the enabled spawn points instead.</span>")
-				
+
 			spawnpos = null
 		else
 			spawnpos = spawntypes[C.prefs.spawnpoint]
-		
+
 	if(spawnpos && !spawnpos.check_job_spawning(rank))
 		if(H)
 			to_chat(H, "<span class='warning'>Your chosen spawnpoint ([spawnpos.display_name]) is unavailable for your chosen job ([rank]). Spawning you at another spawn point instead.</span>")

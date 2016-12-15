@@ -418,3 +418,8 @@ var/const/NO_EMAG_ACT = -50
 	icon_state = "trader"
 	access = list(access_merchant)
 
+/obj/item/weapon/card/id/prisoner
+	name = "identification card"
+	desc = "A card issued to prisoners to identify them."
+	icon_state = "civ" //change this when we get sprites.
+	job_access_type = /datum/job/prisoner
