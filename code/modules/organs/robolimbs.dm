@@ -111,15 +111,14 @@ var/datum/robolimb/basic_robolimb
 	company = "Morpheus"
 	desc = "This limb is simple and functional; no effort has been made to make it look human."
 	icon = 'icons/mob/human_races/cyberlimbs/morpheus/morpheus_main.dmi'
+	restricted_to = list("Machine")
+	use_eye_icon = "blank_eyes"
 	unavailable_at_fab = 1
 
 /datum/robolimb/morpheus/alt
-	company = "Morpheus Monitor."
+	company = "Morpheus Alt."
 	icon = 'icons/mob/human_races/cyberlimbs/morpheus/morpheus_alt.dmi'
 	applies_to_part = list(BP_HEAD)
-	restricted_to = list("Machine")
-	can_eat = null
-	use_eye_icon = "blank_eyes"
 	unavailable_at_fab = 1
 
 /datum/robolimb/veymed
@@ -128,9 +127,10 @@ var/datum/robolimb/basic_robolimb
 	icon = 'icons/mob/human_races/cyberlimbs/veymed/veymed_main.dmi'
 	can_eat = 1
 	skintone = 1
-
-/datum/robolimb/scorpius
-	company = "Scorpius"
-	desc = "This high quality limb is covered in thin layer of synth-fur."
-	icon = 'icons/mob/human_races/cyberlimbs/scorpius/scorpius_main.dmi'
-	can_eat = 1
+	
+/datum/robolimb/resomi
+	company = "Small prosthetic"
+	desc = "This prosthetic is small and fit for nonhuman proportions."
+	icon = 'icons/mob/human_races/cyberlimbs/resomi/resomi_main.dmi'
+	restricted_to = list("Resomi")
+	species_cannot_use = list()
