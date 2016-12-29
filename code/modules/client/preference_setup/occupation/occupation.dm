@@ -51,7 +51,7 @@
 	// We could have something like Captain set to high while on a non-rank map,
 	// so we prune here to make sure we don't spawn as a PFC captain
 	prune_job_prefs_for_rank()
-		
+
 	if(!job_master)
 		return
 
@@ -63,7 +63,7 @@
 /datum/category_item/player_setup_item/occupation/content(mob/user, limit = 16, list/splitJobs, splitLimit = 1)
 	if(!job_master)
 		return
-	
+
 	var/datum/mil_branch/player_branch = null
 	var/datum/mil_rank/player_rank = null
 
@@ -73,11 +73,11 @@
 	if(using_map.flags & MAP_HAS_BRANCH)
 
 		player_branch = mil_branches.get_branch(pref.char_branch)
-		
+
 		. += "Branch of Service: <a href='?src=\ref[src];char_branch=1'>[pref.char_branch]</a>	"
 	if(using_map.flags & MAP_HAS_RANK)
 		player_rank = mil_branches.get_rank(pref.char_branch, pref.char_rank)
-		
+
 		. += "Rank: <a href='?src=\ref[src];char_rank=1'>[pref.char_rank]</a>	"
 	. += "<br>"
 	. += "<table width='100%' cellpadding='1' cellspacing='0'><tr><td width='20%'>" // Table within a table for alignment, also allows you to easily add more columns.
@@ -122,21 +122,21 @@
 			continue
 		if(job.allowed_branches)
 			if(!player_branch)
-				. += "<del>[rank]</del></td><td><b> \[BRANCH RESTRICTED]</b></td></tr>"
+				. += "<del>[rank]</del></td><td><a href='?src=\ref[src];show_branches=[rank]'><b> \[BRANCH RESTRICTED]</b></a></td></tr>"
 				continue
 			if(!is_type_in_list(player_branch, job.allowed_branches))
-				. += "<del>[rank]</del></td><td><b> \[NOT FOR [player_branch.name_short]]</b></td></tr>"
+				. += "<del>[rank]</del></td><td><a href='?src=\ref[src];show_branches=[rank]'><b> \[NOT FOR [player_branch.name_short]]</b></a></td></tr>"
 				continue
-			
+
 		if(job.allowed_ranks)
 			if(!player_rank)
-				. += "<del>[rank]</del></td><td><b> \[RANK RESTRICTED]</b></td></tr>"
+				. += "<del>[rank]</del></td><td><a href='?src=\ref[src];show_ranks=[rank]'><b> \[RANK RESTRICTED]</b></a></td></tr>"
 				continue
-				
+
 			if(!is_type_in_list(player_rank, job.allowed_ranks))
-				. += "<del>[rank]</del></td><td><b> \[NOT FOR [player_rank.name_short || player_rank.name]]</b></td></tr>"
+				. += "<del>[rank]</del></td><td><a href='?src=\ref[src];show_ranks=[rank]'><b> \[NOT FOR [player_rank.name_short || player_rank.name]]</b></a></td></tr>"
 				continue
-				
+
 		if(("Assistant" in pref.job_low) && (rank != "Assistant"))
 			. += "<font color=grey>[rank]</font></td><td></td></tr>"
 			continue
@@ -220,15 +220,23 @@
 	else if(href_list["char_rank"])
 		var/choice = null
 		var/datum/mil_branch/current_branch = mil_branches.get_branch(pref.char_branch)
-		
+
 		if(current_branch)
 			choice = input(user, "Choose your rank.", "Character Preference", pref.char_rank) as null|anything in current_branch.spawn_ranks
-			
+
 		if(choice && CanUseTopic(user))
 			pref.char_rank = choice
 			prune_job_prefs_for_rank()
 			return TOPIC_REFRESH
-	
+	else if(href_list["show_branches"])
+		var/rank = href_list["show_branches"]
+		var/datum/job/job = job_master.GetJob(rank)
+		to_chat(user, "<span clas='notice'>Valid branches for [rank]: [job.get_branches()]</span>")
+	else if(href_list["show_ranks"])
+		var/rank = href_list["show_ranks"]
+		var/datum/job/job = job_master.GetJob(rank)
+		to_chat(user, "<span clas='notice'>Valid ranks for [rank] ([pref.char_branch]): [job.get_ranks(pref.char_branch)]</span>")
+
 	return ..()
 
 /datum/category_item/player_setup_item/occupation/proc/SetPlayerAltTitle(datum/job/job, new_title)
@@ -298,16 +306,16 @@
 		if(job.title == pref.job_high)
 			if(!job.is_branch_allowed(pref.char_branch) || !job.is_rank_allowed(pref.char_branch, pref.char_rank))
 				pref.job_high = null
-				
+
 		else if(job.title in pref.job_medium)
 			if(!job.is_branch_allowed(pref.char_branch) || !job.is_rank_allowed(pref.char_branch, pref.char_rank))
 				pref.job_medium.Remove(job.title)
-		
+
 		else if(job.title in pref.job_low)
 			if(!job.is_branch_allowed(pref.char_branch) || !job.is_rank_allowed(pref.char_branch, pref.char_rank))
 				pref.job_low.Remove(job.title)
-		
-	
+
+
 /datum/category_item/player_setup_item/occupation/proc/ResetJobs()
 	pref.job_high = null
 	pref.job_medium = list()
