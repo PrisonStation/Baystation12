@@ -477,6 +477,49 @@
 		name = "Double-Bun"
 		icon_state = "hair_doublebun"
 
+	lowfade
+		name = "Low Fade"
+		icon_state = "hair_lowfade"
+		veryshort = 1
+
+	medfade
+		name = "Medium Fade"
+		icon_state = "hair_medfade"
+
+	highfade
+		name = "High Fade"
+		icon_state = "hair_highfade"
+		veryshort = 1
+
+	baldfade
+		name = "Balding Fade"
+		icon_state = "hair_baldfade"
+		veryshort = 1
+
+	nofade
+		name = "Regulation Cut"
+		icon_state = "hair_nofade"
+		veryshort = 1
+
+	trimflat
+		name = "Trimmed Flat Top"
+		icon_state = "hair_trimflat"
+		veryshort = 1
+
+	shaved
+		name = "Shaved"
+		icon_state = "hair_shaved"
+		veryshort = 1
+
+	trimmed
+		name = "Trimmed"
+		icon_state = "hair_trimmed"
+		veryshort = 1
+
+	tightbun
+		name = "Tight Bun"
+		icon_state = "hair_tightbun"
+		veryshort = 1
 /*
 ///////////////////////////////////
 /  =---------------------------=  /
@@ -565,6 +608,29 @@
 		name = "Dwarf Beard"
 		icon_state = "facial_dwarf"
 
+	threeOclock
+		name = "3 O'clock Shadow"
+		icon_state = "facial_3oclock"
+
+	threeOclockstache
+		name = "3 O'clock Shadow and Moustache"
+		icon_state = "facial_3oclockmoustache"
+
+	fiveOclock
+		name = "5 O'clock Shadow"
+		icon_state = "facial_5oclock"
+
+	fiveOclockstache
+		name = "5 O'clock Shadow and Moustache"
+		icon_state = "facial_5oclockmoustache"
+
+	sevenOclock
+		name = "7 O'clock Shadow"
+		icon_state = "facial_7oclock"
+
+	sevenOclockstache
+		name = "7 O'clock Shadow and Moustache"
+		icon_state = "facial_7oclockmoustache"
 /*
 ///////////////////////////////////
 /  =---------------------------=  /
